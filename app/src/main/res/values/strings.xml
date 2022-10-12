@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">signAPP</string>
+    <string name="s">首页</string>
+    <string name="c">我的课程</string>
+    <string name="p">我的</string>
+    <string name="w">课程TOP10</string>
+    <string name="title_activity_basemenu">BasemenuActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- 这个是我们新添加的字符串 -->
+    <string name="dlgExitMsg">确定要退出吗？</string>
+
+    <!-- 顺便把之后要用到的字符串也一并准备了 -->
+    <string name="btnNavHome">主页</string>
+    <string name="btnNavMessage">消息</string>
+    <string name="btnNavSettings">设置</string>
+    <string name="title_activity_bottom">BottomActivity</string>
+</resources>

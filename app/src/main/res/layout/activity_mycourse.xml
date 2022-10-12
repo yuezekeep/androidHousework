@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MycourseActivity"> <!-- 本活动的背景色为 holo green dark -->
+    <!-- 注意上方的 Context -->
+
+    <RelativeLayout
+        android:id="@+id/llMessagePage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/llMessageNav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <!-- 在此定义页面主体布局 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/purple_700">
+            <TextView
+                android:text="我的课程"
+                android:textStyle="bold"
+                android:textSize="28sp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+
+                android:textSize="30sp"
+                android:text="近日课程(X)"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/menu_list"
+            android:layout_marginTop="110dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llMessageNav"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/navBack"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llMessagePage">
+
+        <!-- 请务必注意以下各按钮的 drawableTop 和 textColor 属性 -->
+        <Button
+            android:id="@+id/btnNavHome"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_baseline_home_24"
+            android:onClick="onNavButtonsTapped"
+            android:text="@string/btnNavHome"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/navNormal" />
+
+        <Button
+            android:id="@+id/btnNavMessage"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_baseline_menu_book_24"
+            android:onClick="onNavButtonsTapped"
+            android:text="@string/btnNavMessage"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/navActivated" />
+
+        <Button
+            android:id="@+id/btnNavSettings"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_baseline_person_24"
+            android:onClick="onNavButtonsTapped"
+            android:text="@string/btnNavSettings"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/navNormal" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

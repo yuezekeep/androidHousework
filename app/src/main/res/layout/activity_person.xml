@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonActivity"> <!-- 本活动的背景色为 holo orange dark -->
+    <!-- 注意上方的 Context -->
+
+    <RelativeLayout
+        android:id="@+id/llHomePage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/llHomeNav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <!-- 在此定义页面主体布局 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+<!--            <ImageView-->
+<!--                android:scaleType="fitXY"-->
+<!--                android:src="@drawable/img"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"/>-->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="110dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <ImageView
+                android:layout_marginLeft="50dp"
+                android:src="@drawable/ic_baseline_person_24"
+                android:layout_width="80dp"
+                android:layout_height="80dp"/>
+            <TextView
+                android:textSize="30sp"
+                android:text="用户Id"
+                android:layout_marginLeft="140dp"
+                android:layout_width="200dp"
+                android:layout_height="40dp"/>
+            <TextView
+                android:layout_marginTop="40dp"
+                android:textSize="20sp"
+                android:text="用户学校"
+                android:layout_marginLeft="160dp"
+                android:layout_width="200dp"
+                android:layout_height="30dp"/>
+            <TextView
+                android:layout_marginTop="70dp"
+                android:textSize="20sp"
+                android:text="用户简历"
+                android:layout_marginLeft="160dp"
+                android:layout_width="200dp"
+                android:layout_height="30dp"/>
+            <Button
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="编辑资料"
+                android:layout_marginLeft="280dp"
+                android:layout_marginTop="30dp"
+                android:layout_width="180dp"
+                android:layout_height="50dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_marginLeft="280dp"
+                android:src="@drawable/ic_baseline_notifications_24"
+                android:layout_width="35dp"
+                android:layout_height="35dp"/>
+            <ImageView
+                android:layout_marginLeft="335dp"
+                android:src="@drawable/ic_baseline_redo_24"
+                android:layout_width="35dp"
+                android:layout_height="35dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="280dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/gray">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/view_person">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_baseline_cloud_download_24" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="10dp"
+                    android:text="缓存课程"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="280dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_right_24" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/view_person">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="10dp"
+                    android:text="收藏课程"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="280dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_right_24" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="145dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/view_person">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_baseline_assignment_24" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="10dp"
+                    android:text="意见反馈"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="280dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_right_24" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="210dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/view_person">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_baseline_autorenew_24" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="10dp"
+                    android:text="检查更新"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="15dp"
+                    android:text="当前版本为:xxxxx"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="250dp"
+                    android:layout_marginTop="18dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_baseline_lens_24" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="280dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_right_24" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="300dp"
+                android:layout_marginRight="20dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="退出登陆"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- 以下为导航栏的布局 -->
+    <LinearLayout
+        android:id="@+id/llHomeNav"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/navBack"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llHomePage">
+
+        <!-- 请务必注意以下各按钮的 drawableTop 和 textColor 属性 -->
+        <Button
+            android:id="@+id/btnNavHome"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_baseline_home_24"
+            android:onClick="onNavButtonsTapped"
+            android:text="@string/btnNavHome"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/navNormal" />
+
+        <Button
+            android:id="@+id/btnNavMessage"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_baseline_menu_book_24"
+            android:onClick="onNavButtonsTapped"
+            android:text="@string/btnNavMessage"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/navNormal" />
+
+        <Button
+            android:id="@+id/btnNavSettings"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_baseline_person_24"
+            android:onClick="onNavButtonsTapped"
+            android:text="@string/btnNavSettings"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/navActivated" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

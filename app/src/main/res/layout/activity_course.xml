@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="112dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#F8F8F8"/>
+        <LinearLayout
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/courseId"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/secondary_text_dark"
+                android:textSize="20sp" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/image_item"
+                app:riv_corner_radius="5dip"
+                android:src="@drawable/ic_baseline_close_24"
+                android:layout_width="150dp"
+                android:layout_height="93dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/courseName"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="课程名"
+                    android:textStyle="bold"
+                    android:textColor="#222222"
+                    android:layout_marginEnd="8dp"
+                    android:textSize="25sp"/>
+
+                <TextView
+                    android:id="@+id/collegeName"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="collegeName"
+                    android:layout_marginTop="10dp"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/secondary_text_dark"
+                    style="@style/TextAppearance.AppCompat.Subhead"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#F8F8F8"/>
+    </androidx.cardview.widget.CardView>
