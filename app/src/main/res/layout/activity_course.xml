@@ -23,7 +23,7 @@
                 android:textColor="@android:color/secondary_text_dark"
                 android:textSize="20sp" />
 
-            <com.makeramen.roundedimageview.RoundedImageView
+            <base.MyImageView
                 android:id="@+id/image_item"
                 app:riv_corner_radius="5dip"
                 android:src="@drawable/ic_baseline_close_24"

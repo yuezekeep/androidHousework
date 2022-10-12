@@ -21,6 +21,8 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
 
+import base.MyImageView;
+
 public class CourseListAdapter
         extends RecyclerView.Adapter<CourseListAdapter.ViewHolder> {
 
@@ -53,8 +55,10 @@ public class CourseListAdapter
         holder.collegeName.setText(recordsBean.getCollegeName());
 
         Uri uri=Uri.parse(recordsBean.getCoursePhoto());
+
         Log.d("路径：   ",recordsBean.getCoursePhoto());
-        holder.image.setImageURI(uri);
+//        holder.image.setImageURI(uri);
+        holder.image.setImageURL(uri.toString());
 //        String hhh=recordsBean.getCoursePhoto();
 //        Bitmap bitmap=getHttpBitmap(hhh);
 //        holder.image.setImageBitmap(bitmap);
@@ -63,28 +67,7 @@ public class CourseListAdapter
 
     }
 
-//    public static Bitmap getHttpBitmap(String url) {
-//        URL myFileUrl = null;
-//        Bitmap bitmap = null;
-//        try {
-//            Log.d(TAG, url);
-//            myFileUrl = new URL(url);
-//        } catch (MalformedURLException e) {
-//            e.printStackTrace();
-//        }
-//        try {
-//            HttpURLConnection conn = (HttpURLConnection) myFileUrl.openConnection();
-//            conn.setConnectTimeout(0);
-//            conn.setDoInput(true);
-//            conn.connect();
-//            InputStream is = conn.getInputStream();
-//            bitmap = BitmapFactory.decodeStream(is);
-//            is.close();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//        return bitmap;
-//    }
+
     //返回要添加的item個數
     @Override
     public int getItemCount() {
@@ -96,7 +79,8 @@ public class CourseListAdapter
         TextView courseName;
         TextView collegeName;
 
-        ImageView image;
+//        ImageView image;
+        MyImageView image;
         public ViewHolder(View view) {
             super(view);
 
